@@ -6,3 +6,8 @@ Sự tiến bộ trong kỹ thuật xử lý hình ảnh và tự động hóa t
 Sử dụng Machine Learning để xây dựng model phân loại trái cây dựa trên hình ảnh. Từ đó, có thể giúp quá trình sắp xếp và phân loại trái cây trở thành một quá trình tự động gần như hoàn toàn.
 Input: Ảnh của một loại trái cây trên nền đơn giản (1 màu).
 Output: Tên của loại trái cây đó.
+II. DỮ LIỆU
+III. CÁC KĨ THUẬT XỬ LÍ DATA
+IV. CÁC MODEL SỬ DỤNG ĐỂ TRAIN
+VI. KẾT LUẬN
+Hướng dẫn sử dụng
