@@ -1,4 +1,5 @@
-FRUITS CLASSIFICATION - PHÂN LOẠI TRÁI CÂY
+FRUITS CLASSIFICATION - PHÂN LOẠI TRÁI CÂY 
+
 I. TÓM TẮT: Phân loại trái cây dựa trên hình ảnh sử dụng các kĩ thuật machine learning
 1. Bài toán:
 Sự tiến bộ trong kỹ thuật xử lý hình ảnh và tự động hóa trong lĩnh vực công nghiệp thúc đẩy việc sử dụng nó trong hầu hết các lĩnh vực. Trong đó, phân loại trái cây dựa trên hình ảnh của nó vẫn còn là một thách thức. Việc phân loại trái cây có thể được sử dụng để thực hiện quá trình săp xếp và phân loại trái cây giúp quản lý, bảo quản những loại trái cây một cách tốt nhất có thể (những phương pháp bảo quản khác nhau dựa trên từng loại trái cây). Phương pháp truyền thống để phân loại trái cây là phân loại một cách thủ công, tốn thời gian và luôn phải có sự hiện diện của con người.
@@ -51,6 +52,7 @@ Tăng cường dữ liệu thực tế: Áp dụng kỹ thuật tăng cường d
 
 
 VI. KẾT LUẬN
+
 Tóm tắt kết quả đạt được
 Đã xây dựng thành công một quy trình tạo tập dữ liệu ảnh trái cây quay 360 độ, kết hợp phần cứng đơn giản (camera, động cơ quay).
 
