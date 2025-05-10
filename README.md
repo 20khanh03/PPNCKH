@@ -9,6 +9,7 @@ Input: Ảnh của một loại trái cây trên nền đơn giản (1 màu).
 Output: Tên của loại trái cây đó.
 
 II. DỮ LIỆU
+
 Nghiên cứu này tập trung vào ứng dụng Machine Learning để nhận diện trái cây, sử dụng tập dữ liệu Fruits-360 gồm hơn 130.000 hình ảnh của 194 loại trái cây và rau củ. Phạm vi nghiên cứu được xác định như sau: 
 Đối tượng nghiên cứu: Các thuật toán Machine Learning, đặc biệt là mạng nơ-ron tích chập (CNN), được sử dụng để phân loại trái cây dựa trên hình ảnh trong tập dữ liệu Fruits-360. 
 
@@ -20,6 +21,7 @@ Không nghiên cứu tích hợp mô hình vào hệ thống kiểm tra chất l
 Không sử dụng dữ liệu bên ngoài ngoài Fruits-360 để đảm bảo tính nhất quán trong nghiên cứu. 
 
 III. CÁC KĨ THUẬT XỬ LÍ DATA
+
  sử dụng 2 phương pháp tách biệt để xử lí data và training model đó là dựa trên màu sắc và cạnh. Sau đó kết hợp lại với nhau để train model.
 1. Xử lý data dựa trên màu của bức ảnh
 Resize ảnh về size 200x200.
