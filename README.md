@@ -8,6 +8,15 @@ Input: Ảnh của một loại trái cây trên nền đơn giản (1 màu).
 Output: Tên của loại trái cây đó.
 
 II. DỮ LIỆU
+Nghiên cứu này tập trung vào ứng dụng Machine Learning để nhận diện trái cây, sử dụng tập dữ liệu Fruits-360 gồm hơn 130.000 hình ảnh của 194 loại trái cây và rau củ. Phạm vi nghiên cứu được xác định như sau: 
+Đối tượng nghiên cứu: Các thuật toán Machine Learning, đặc biệt là mạng nơ-ron tích chập (CNN), được sử dụng để phân loại trái cây dựa trên hình ảnh trong tập dữ liệu Fruits-360. 
+
+Dữ liệu nghiên cứu: Chỉ sử dụng hình ảnh của trái cây từ Fruits-360, đảm bảo tính thống nhất và chất lượng dữ liệu phù hợp cho quá trình huấn luyện mô hình. 
+Phương pháp nghiên cứu: Tiền xử lý hình ảnh, huấn luyện mô hình CNN, và đánh giá hiệu suất trên tập kiểm tra từ cùng tập dữ liệu Fruits-360. 
+Giới hạn nghiên cứu:  
+Không mở rộng nghiên cứu sang nhận diện thực phẩm khác ngoài trái cây. 
+Không nghiên cứu tích hợp mô hình vào hệ thống kiểm tra chất lượng thực tế, chỉ tập trung vào phân loại hình ảnh. 
+Không sử dụng dữ liệu bên ngoài ngoài Fruits-360 để đảm bảo tính nhất quán trong nghiên cứu. 
 
 III. CÁC KĨ THUẬT XỬ LÍ DATA
  sử dụng 2 phương pháp tách biệt để xử lí data và training model đó là dựa trên màu sắc và cạnh. Sau đó kết hợp lại với nhau để train model.
@@ -36,5 +45,21 @@ Tính trung bình và độ lệch chuẩn cho từng section.
 
 IV. CÁC MODEL SỬ DỤNG ĐỂ TRAIN
 
+Tận dụng CNN nhưng cải tiến kiến trúc: Sử dụng mô hình CNN nâng cao, có thể kết hợp với ResNet hoặc EfficientNet để cải thiện độ chính xác. 
+Tăng cường dữ liệu thực tế: Áp dụng kỹ thuật tăng cường dữ liệu, như xoay ảnh, thay đổi độ sáng, làm mờ nền để mô hình hoạt động tốt hơn trong điều kiện thực tế. 
+Đánh giá mô hình trên dữ liệu thực tế: Thay vì chỉ kiểm tra trên tập Fruits-360, nghiên cứu sẽ thử nghiệm mô hình với ảnh chụp thực tế, giúp đánh giá khả năng nhận diện trong môi trường đa dạng. 
+
+
 VI. KẾT LUẬN
-Hướng dẫn sử dụng
+Tóm tắt kết quả đạt được
+Đã xây dựng thành công một quy trình tạo tập dữ liệu ảnh trái cây quay 360 độ, kết hợp phần cứng đơn giản (camera, động cơ quay).
+
+
+Đã thiết kế và triển khai thuật toán tách nền dựa trên phương pháp flood fill, giúp làm sạch nền ảnh hiệu quả trước khi đưa vào huấn luyện mô hình.
+
+
+Đã xây dựng mô hình học sâu sử dụng mạng CNN gồm nhiều tầng Conv2D – MaxPooling – Dense, cho kết quả phân loại khả quan.
+
+
+Đã thực hiện huấn luyện và đánh giá mô hình với độ chính xác cao trên tập dữ liệu được xử lý.
+
