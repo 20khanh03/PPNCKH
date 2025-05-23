@@ -9,6 +9,7 @@ Phương pháp nghiên cứu khoa học trong CNTT
 - Trần Hoàng Khanh _ 3121410257 _ 20hoangkhanh03@gmail.com 
 - Nguyễn Ngọc Hải _ 3121410175 _ emkotenrr@gmail.com 
 - Dương Duy Khang _ 3121410250 _ duongduykhang03@gmail.com
+
 **Giảng Viên Hướng Dẫn** : TS. Đỗ Như Tài
 
 **Cơ Quan** : Khoa Công nghệ Thông tin, Trường Đại học Sài Gòn, TPHCM
@@ -50,7 +51,7 @@ Nghiên cứu này được thực hiện với mục đích chính là xây d�
 |6| Huấn luyện model|Xây dựng và huấn luyện các mô hình (CNN,MobileNet,ResNet, ...)|3 tuần |
 |7|Đánh giá mô hình| So sánh các kết quả và tối ưu |1 tuần|
 |8|Báo cáo|Tổng hợp kết quả , hoàn thiện và viết báo cáo nghiên cứu|1 tuần|
-||||||15/15 tuần|
+|9|||||15/15 tuần|
 
 ## Tài liệu tham khảo 
 [1] H. Mureșan and M. Oltean, “Fruit recognition from images using deep learning,” Acta Univ. Sapientiae, Informatica, vol. 10, no. 1, pp. 26–42, 2018. DOI: 10.2478/ausi-2018-0002.
