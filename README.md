@@ -1,69 +1,62 @@
-FRUITS CLASSIFICATION - PHÂN LOẠI TRÁI CÂY 
 
-I. TÓM TẮT: Phân loại trái cây dựa trên hình ảnh sử dụng các kĩ thuật machine learning
-1. Bài toán:
-Sự tiến bộ trong kỹ thuật xử lý hình ảnh và tự động hóa trong lĩnh vực công nghiệp thúc đẩy việc sử dụng nó trong hầu hết các lĩnh vực. Trong đó, phân loại trái cây dựa trên hình ảnh của nó vẫn còn là một thách thức. Việc phân loại trái cây có thể được sử dụng để thực hiện quá trình săp xếp và phân loại trái cây giúp quản lý, bảo quản những loại trái cây một cách tốt nhất có thể (những phương pháp bảo quản khác nhau dựa trên từng loại trái cây). Phương pháp truyền thống để phân loại trái cây là phân loại một cách thủ công, tốn thời gian và luôn phải có sự hiện diện của con người.
-2. Phương pháp giải quyết:
-Sử dụng Machine Learning để xây dựng model phân loại trái cây dựa trên hình ảnh. Từ đó, có thể giúp quá trình sắp xếp và phân loại trái cây trở thành một quá trình tự động gần như hoàn toàn.
-Input: Ảnh của một loại trái cây trên nền đơn giản (1 màu).
-Output: Tên của loại trái cây đó.
+# Xây Dựng Mô Hình Phân Loại Trái Cây Bằng Hình Ảnh Sử Dụng Dữ Liệu Fruits-360
 
-II. DỮ LIỆU
-
-Nghiên cứu này tập trung vào ứng dụng Machine Learning để nhận diện trái cây, sử dụng tập dữ liệu Fruits-360 gồm hơn 130.000 hình ảnh của 194 loại trái cây và rau củ. Phạm vi nghiên cứu được xác định như sau: 
-Đối tượng nghiên cứu: Các thuật toán Machine Learning, đặc biệt là mạng nơ-ron tích chập (CNN), được sử dụng để phân loại trái cây dựa trên hình ảnh trong tập dữ liệu Fruits-360. 
-
-Dữ liệu nghiên cứu: Chỉ sử dụng hình ảnh của trái cây từ Fruits-360, đảm bảo tính thống nhất và chất lượng dữ liệu phù hợp cho quá trình huấn luyện mô hình. 
-Phương pháp nghiên cứu: Tiền xử lý hình ảnh, huấn luyện mô hình CNN, và đánh giá hiệu suất trên tập kiểm tra từ cùng tập dữ liệu Fruits-360. 
-Giới hạn nghiên cứu:  
-Không mở rộng nghiên cứu sang nhận diện thực phẩm khác ngoài trái cây. 
-Không nghiên cứu tích hợp mô hình vào hệ thống kiểm tra chất lượng thực tế, chỉ tập trung vào phân loại hình ảnh. 
-Không sử dụng dữ liệu bên ngoài ngoài Fruits-360 để đảm bảo tính nhất quán trong nghiên cứu. 
-
-III. CÁC KĨ THUẬT XỬ LÍ DATA
-
- sử dụng 2 phương pháp tách biệt để xử lí data và training model đó là dựa trên màu sắc và cạnh. Sau đó kết hợp lại với nhau để train model.
-1. Xử lý data dựa trên màu của bức ảnh
-Resize ảnh về size 200x200.
-Đưa bức ảnh về 2 màu sử dụng thuật toán K-means.
-Loại bỏ màu sáng hơn của bức ảnh (Màu sáng hơn thường là màu nền, nên loại bỏ).
-Chia nhỏ bức ảnh thành 25 section (40x40).
-Tính trung bình và độ lệch chuẩn cho:
-Hướng thứ nhất: Từng channel màu trong 3 channel màu RGB
-Hướng thứ hai: Cho từng section
-    
-
-2. Xử lý data bằng kĩ thuật tìm cạnh
-Resize ảnh về size 200x200.
-Hướng thứ nhất:
-Đưa bức ảnh về 2 màu sử dụng thuật toán K-means.
-Sử dụng thuật toán Canny để tìm cạnh.
-Chia nhỏ bức ảnh thành 25 section (40x40).
-Tính trung bình và độ lệch chuẩn cho từng section.
-Hướng thứ hai:
-Sử dụng thuật toán Canny để tìm cạnh.
-Chia nhỏ bức ảnh thành 25 section (40x40).
-Tính trung bình và độ lệch chuẩn cho từng section.
-    
-
-IV. CÁC MODEL SỬ DỤNG ĐỂ TRAIN
-
-Tận dụng CNN nhưng cải tiến kiến trúc: Sử dụng mô hình CNN nâng cao, có thể kết hợp với ResNet hoặc EfficientNet để cải thiện độ chính xác. 
-Tăng cường dữ liệu thực tế: Áp dụng kỹ thuật tăng cường dữ liệu, như xoay ảnh, thay đổi độ sáng, làm mờ nền để mô hình hoạt động tốt hơn trong điều kiện thực tế. 
-Đánh giá mô hình trên dữ liệu thực tế: Thay vì chỉ kiểm tra trên tập Fruits-360, nghiên cứu sẽ thử nghiệm mô hình với ảnh chụp thực tế, giúp đánh giá khả năng nhận diện trong môi trường đa dạng. 
+Phương pháp nghiên cứu khoa học trong CNTT
 
 
-VI. KẾT LUẬN
+## Thông tin liên hệ 
+**Nhóm sinh viên thực hiện** :
+- Trần Hoàng Khanh _ 3121410257 _ 20hoangkhanh03@gmail.com 
+- Nguyễn Ngọc Hải _ 3121410175 _ emkotenrr@gmail.com 
+- Dương Duy Khang _ 3121410250 _ duongduykhang03@gmail.com
+**Giảng Viên Hướng Dẫn** : TS. Đỗ Như Tài
 
-Tóm tắt kết quả đạt được
-Đã xây dựng thành công một quy trình tạo tập dữ liệu ảnh trái cây quay 360 độ, kết hợp phần cứng đơn giản (camera, động cơ quay).
+**Cơ Quan** : Khoa Công nghệ Thông tin, Trường Đại học Sài Gòn, TPHCM
+
+## Tổng quan 
+Nghiên cứu này được thực hiện với mục đích chính là xây dựng một hệ thống tự động nhận diện và phân loại trái cây dựa trên hình ảnh, nhằm thay thế quy trình thủ công còn nhiều hạn chế hiện nay. Việc phát triển hệ thống này không chỉ giúp tăng độ chính xác và tốc độ xử lý trong khâu phân loại, mà còn góp phần hiện đại hóa quy trình sản xuất, đóng gói và kiểm định chất lượng nông sản tại Việt Nam.
+
+## Mục tiêu đề tài
+
+-	**Ứng dụng phương pháp học sâu** để phát triển mô hình có khả năng nhận diện và phân loại các loại trái cây phổ biến dựa trên hình ảnh đầu vào.
+-	**Xây dựng quy trình huấn luyện mô hình** dựa trên tập dữ liệu hình ảnh thực tế, đảm bảo mô hình học được đặc trưng quan trọng của từng loại trái cây trong điều kiện chụp ảnh đa dạng.
+-	**Đánh giá hiệu suất mô hình** thông qua các chỉ số đo lường như độ chính xác, độ nhạy và tốc độ xử lý, đồng thời so sánh với các mô hình học sâu khác để chọn ra phương pháp tối ưu.
 
 
-Đã thiết kế và triển khai thuật toán tách nền dựa trên phương pháp flood fill, giúp làm sạch nền ảnh hiệu quả trước khi đưa vào huấn luyện mô hình.
+## Bộ dữ liệu Fruits-360 
+**Mô tả** : Bộ dữ liệu Fruits-360 là một bộ dữ liệu hình ảnh gồm hơn 90.000 ảnh trái cây thuộc 131–166 loại (tùy phiên bản), được chụp trong môi trường kiểm soát (nền trắng, ánh sáng đều). Mỗi ảnh có kích thước 100×100, chụp từ nhiều góc khác nhau, phục vụ huấn luyện và kiểm thử các mô hình thị giác máy tính phân loại trái cây.
+
+**Một số bài báo có sử dụng bộ dữ liệu** :
+| STT             | Tên Bài Báo                                                                | Tác giả       |
+| ----------------- | ------------------------------------------------------------------ | -------------|
+| 1 | Fruit recognition from images using deep learning  |Horea Mureșan, Mihai Oltean (2018) |
+| 2 |  A fruits recognition system based on a modern deep learning technique| Dang Thi Phuong Chung, Dinh Van Tai (2019)| 
+| 3 | Performance Analysis of Different Optimizers for Deep Learning-Based Image Recognition | Seda Postalcıoğlu (2020)| 
+| 4 |Centre-loss—A preferred class verification approach over sample-to-sample in self-checkout products datasets  |Ciapas B., Treigys P. (2024)  |
+|5|  Image classification based on tensor network DenseNet model| Chunyang Zhu, Lei Wang, Weihua Zhao, Heng Lian (2024)|
 
 
-Đã xây dựng mô hình học sâu sử dụng mạng CNN gồm nhiều tầng Conv2D – MaxPooling – Dense, cho kết quả phân loại khả quan.
 
+**Trích dẫn** : Oltean, Mihai (2018), “Fruits 360 dataset”, Mendeley Data, V1, **DOI**: 10.17632/rp73yg93n8.1
 
-Đã thực hiện huấn luyện và đánh giá mô hình với độ chính xác cao trên tập dữ liệu được xử lý.
+## Kế hoạch thực hiện
+|STT|Giai Đoạn|Mô Tả|Thời Gian Thực Hiện| 
+| ----- | --------------------- | --------------------------| ---------------|
+|1|Tìm kiếm | Tìm hiểu và đọc các bài báo nghiên cứu khoa học|2 tuần|
+|2|Xác định đề tài|Nghiên cứu, xác định và chọn đề tài,  tìm và đọc các bài báo liên quan| 2 tuần|
+|3|Xây dựng kế hoạch| Xác định input/output, độ đo bài toán , xây dựng đề cương|3 tuần|
+|4|Khám phá dữ liệu /EDA| Kiểm tra/Thống kê mô tả dữ liệu, xử lý dữ liệu lỗi/ thiếu| 2 tuần|
+|5|Tiền xử lý dữ liệu| Chuẩn hóa hình ảnh trước khi đưa vào huấn luyện| 1 tuần |
+|6| Huấn luyện model|Xây dựng và huấn luyện các mô hình (CNN,MobileNet,ResNet, ...)|3 tuần |
+|7|Đánh giá mô hình| So sánh các kết quả và tối ưu |1 tuần|
+|8|Báo cáo|Tổng hợp kết quả , hoàn thiện và viết báo cáo nghiên cứu|1 tuần|
+||||||15/15 tuần|
 
+## Tài liệu tham khảo 
+[1] H. Mureșan and M. Oltean, “Fruit recognition from images using deep learning,” Acta Univ. Sapientiae, Informatica, vol. 10, no. 1, pp. 26–42, 2018. DOI: 10.2478/ausi-2018-0002.
+
+[2] Frida Femling, Adam Olsson, Fernando Alonso-Fernandez, “Fruit and Vegetable Identification Using Machine Learning for Retail Applications”,  arXiv:1810.09811v1 [cs.CV] 23 Oct 2018.
+
+[3] J. Brownlee. (2016). Machine Learning Mastery With Python: Understand Your Data, Create Accurate Models and Work Projects End-To-End. Melbourne, VIC, Australia: Machine Learning Mastery.
+
+[4] Cheng, H., Damerow, L., Sun, Y., and Blanke,M. Early yield prediction using image analysis of apple fruit and tree canopy features with neural networks. Journal of Imaging 3, 1 (2017). 
