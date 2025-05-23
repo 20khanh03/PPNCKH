@@ -1,2 +1,3 @@
 Fruit360-Images-Dataset.zip filter=lfs diff=lfs merge=lfs -text
 video[[:space:]]thuyet[[:space:]]trinh.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
